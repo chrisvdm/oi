@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <title>oitjie | Coming Soon</title>
+    <meta type="description" content="Ethically handcrafted knitwear for little adventurers. Made in South Africa. Coming soon!"/>
+    <script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "LocalBusiness",
+  "name" : "oitjie",
+  "email" : "hello@oitjie.com",
+  "address" : {
+    "@type" : "PostalAddress",
+    "addressLocality" : "Cape Town",
+    "addressRegion" : "Western Cape",
+    "addressCountry" : "South Africa"
+  },
+  "url" : "http://oitjie.com/"
+}
+</script>
+<style>
+@font-face {
+  font-family: 'Bodoni';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bodoni'), url('../assets/fonts/bodoni.woff') format('woff');
+}
+
+* {
+  font-family: 'Jost', serif;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+h2, h3 {
+  font-family: 'Bodoni', serif;
+}
+
+body {
+  background-color: #fafafa;
+  min-height: 100vh;
+}
+
+/* LAYOUT */
+.main-wrapper {
+  padding-top: 10rem;
+  flex: 1;
+  position: relative;
+}
+
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+/* MAIN BODY */
+.content-wrapper {
+  position: relative;
+  max-width: 580px;
+  margin: 0 auto;
+  z-index: 200000;
+}
+
+.block-padding {
+  padding: 10px 20px;
+  padding-bottom: 40px;
+}
+
+.pink-bg {
+  background-color: rgba(196, 138, 105, 0.3);
+  border-radius: 2px;
+}
+
+.minus-top-left {
+  position: absolute;
+  top: -115px;
+  width: 400px;
+}
+
+.top-margin {
+  margin-top: 100px;
+}
+
+.logo {
+  max-width: 400px;
+  width: 100%;
+}
+
+/* SITE-FOOTER */
+.site-footer {
+  text-align: center;
+  font-size: 12px;
+}
+
+.site-footer p {
+  margin-bottom: 0;
+  font-size: 80%;
+}
+
+.link--text {
+  color: #100000;
+}
+
+/* FORM */
+.label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.subscribe-wrapper {
+  border: 1px solid #100000;
+  border-radius: 3px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  max-width: 390px;
+}
+
+.input, .btn {
+  font-family: 'Jost', sans-serif;
+  padding: 5px 10px;
+  border: none;
+}
+
+.input {
+  background-color: #fafafa;
+  flex: 1;
+}
+
+.input:focus {
+  background-color: #f7ebe4;
+  outline:none;
+}
+
+.btn {
+  background-color: #100000;
+  color: #fafafa;
+  font-weight: 400;
+  text-transform: lowercase;
+  border-left: solid 1px #100000;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+  color: #100000;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.st0 {
+  fill:#100000;
+}
+
+.st1 {
+  font-family:'Jost-Regular';
+}
+
+.st2 {
+  font-size:316.3853px;
+}
+
+.error-msg {
+  color: red;
+}
+</style>
+  </head>
+  <body class='site-wrapper'>
+      <main class='main-wrapper'>
+        <div class='content-wrapper pink-bg block-padding'>
+          <h1 class='minus-top-left'><a href='/' alt='link to oitjie home page'><svg class='logo' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 636 295" style="enable-background:new 0 0 636 295;" xml:space="preserve">
+          <g>
+          	<text transform="matrix(1 0 0 1 -9.4087 224.2637)" class="st0 st1 st2">oitjie</text>
+
+          		<rect x="60.4" y="152.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -101.3238 98.665)" class="st0" width="16.1" height="39.1"/>
+
+          		<rect x="85.7" y="126.8" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -76.002 109.1536)" class="st0" width="16.1" height="39.1"/>
+          </g>
+          </svg></a></h1>
+
+<h2 class='top-margin'>Ethically handcrafted knitwear for little adventurers. Made in South Africa.</h2>
+          <form class='subscribe-form validate' onsubmit="addSub(event); return false">
+            <label class='label' for='email'>Coming soon. Subscribe to our newsletter to know more and get 15% off your first purchase</label>
+            <span id='oi-error' class='error-msg'/></span>
+            <div class='subscribe-wrapper'>
+              <input id="oi-email" required name='email' class='input' type='email' placeholder='email'/><input type="submit" value="Subscribe" name="subscribe" class="button btn">
+            </div>
+          </form>
+        </div>
+
+      </main>
+
+    <footer class='site-footer'>
+
+      <p>
+      Contact: <a class='link--text' href="mailto:hello@oitjie.com?subject=web-query">hello@oitjie.com</a> | Follow us: <a class='link--text' href='https://www.instagram.com/oitjie/' alt='Instagram'>@oitjie</a> |   © 2020 oitjie
+        </p>
+      </footer>
+
+      <script type="text/javascript">
+      function addSub(e) {
+        e.preventDefault();
+        var emailAddress = this.document.getElementById('oi-email').value;
+        var url = '/sub';
+        var Http = new XMLHttpRequest();
+        var data = {
+          email_address: emailAddress,
+        };
+
+        Http.onreadystatechange = function () {
+          if(this.readyState == 4 && this.status == 200) {
+            resp = JSON.parse(Http.responseText)
+            if (resp.statusCode === 400 && resp.data.title === 'Member Exists') {
+              const errorEl = document.getElementById('oi-error')
+              var text = document.createTextNode("It looks like you've already subscribed to our newsletter or maybe you got your email address wrong");
+              errorEl.appendChild(text);
+            } else {
+              window.location.replace('/success')
+            }
+          }
+        }
+        Http.open( "POST", url, false );
+        Http.setRequestHeader("Content-Type", "application/json");
+        Http.send( JSON.stringify(data) );
+
+      }
+
+      </script>
+  </body>
+</html>
