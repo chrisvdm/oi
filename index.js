@@ -11,7 +11,7 @@ var successHtml = fs.readFileSync('success.html')
 
 var FAVICON = path.join(__dirname, 'favicon.ico')
 
-const port = process.env.PORT
+const port = 8080
 
 const server = http.createServer(async (req, res) => {
   const urlParts = url.parse(req.url, true)
