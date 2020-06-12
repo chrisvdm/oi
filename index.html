@@ -140,6 +140,7 @@ body {
   font-family: 'Jost', sans-serif;
   padding: 5px 10px;
   border: none;
+  border-radius: 0;
 }
 
 .input {
@@ -291,7 +292,7 @@ left: 0;
             }
           }
         }
-        Http.open( "POST", url, false );
+        Http.open( "POST", url, true );
         Http.setRequestHeader("Content-Type", "application/json");
         Http.send( JSON.stringify(data) );
 
