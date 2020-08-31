@@ -13,8 +13,7 @@ var FAVICON = path.join(__dirname, 'favicon.ico')
 var STYLE = path.join(__dirname, 'main.css')
 var SKETCH = path.join(__dirname, 'img01.png')
 
-// const port = process.env.PORT
-const port = 8080
+const port = process.env.PORT
 
 const server = http.createServer(async (req, res) => {
   const urlParts = url.parse(req.url, true)
