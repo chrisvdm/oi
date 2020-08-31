@@ -10,8 +10,11 @@ var index = fs.readFileSync('index.html')
 var successHtml = fs.readFileSync('success.html')
 
 var FAVICON = path.join(__dirname, 'favicon.ico')
+var STYLE = path.join(__dirname, 'main.css')
+var SKETCH = path.join(__dirname, 'img01.png')
 
-const port = process.env.PORT
+// const port = process.env.PORT
+const port = 8080
 
 const server = http.createServer(async (req, res) => {
   const urlParts = url.parse(req.url, true)
@@ -23,6 +26,18 @@ const server = http.createServer(async (req, res) => {
   if (req.method === 'GET' && qObj.path === '/favicon.ico') {
     res.setHeader('Content-Type', 'image/x-icon')
     fs.createReadStream(FAVICON).pipe(res)
+    return
+  }
+
+  if (req.method === 'GET' && qObj.path === '/main.css') {
+    res.setHeader('Content-Type', 'text/css')
+    fs.createReadStream(STYLE).pipe(res)
+    return
+  }
+
+  if (req.method === 'GET' && qObj.path === '/img01.png') {
+    res.setHeader('Content-Type', 'image/png')
+    fs.createReadStream(SKETCH).pipe(res)
     return
   }
 
